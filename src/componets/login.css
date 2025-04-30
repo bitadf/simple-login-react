@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.login-wrapper {
+    display: flex; /* THIS WAS MISSING */
+    background-color: #ffe6cc;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Also add this if you want full screen center */
+}
+
+.kososher {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid white;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    
+}
+
+.login-left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.login-left img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.login-right {
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items:flex-start;
+    
+}
+.login-form{
+    margin-top: 20px;
+}
+form input{
+    width: 100%;
+}
+
+.logo img{
+    width: 50%;
+}
+.form-title{
+    
+    text-align: start;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.form-text{
+    text-align: start;
+    font-size: 16px;
+    color: grey;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+button{
+    width: 100%;
+}
+.continue-google{
+    gap: 10px;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: white;
+    border: 1px solid rgb(233, 230, 230);
+
+    border-radius: 5px;
+   
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+.form-text1{
+    text-align: center;
+    width: 100%;
+    color: gray;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+    margin-top: 20px;
+}
+.input-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    color: gray;
+}
+
+
+form input{
+    padding: 6px 10px;
+    font-weight: 300;
+    background-color: white;
+    border: 1px solid rgb(233, 230, 230);
+
+    border-radius: 5px;
+}
+.remember-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.remember-me{
+
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    gap: 0.5rem;
+    margin: 0;
+    white-space: nowrap;
+}
+.forget-password{
+    color:#7F265B;
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.checkbox{
+    accent-color: #7F265B;
+}
+
+.submit-button{
+   
+    padding: 6px 10px;
+    background-color: #7F265B;;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 5px;
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.submit-button:hover{
+    transform: scale(1.2);
+}
+.continue-google:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .kososher {
+        flex-direction: column; 
+        border: none;
+    }
+
+    .login-left {
+        order: -1; 
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login-right {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .continue-google,
+    .submit-button {
+        font-size: 14px;
+    }
+}
